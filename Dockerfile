@@ -77,7 +77,6 @@ USER mumble
 EXPOSE 64738/tcp 64738/udp
 COPY entrypoint.sh /entrypoint.sh
 
-VOLUME ["/data"]
 ENTRYPOINT ["/entrypoint.sh"]
 CMD ["/usr/bin/mumble-server", "-fg"]
 
